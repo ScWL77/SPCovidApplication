@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1200.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RecordTableController">
+   <children>
+      <TextField fx:id="filterField" layoutX="88.0" layoutY="14.0" />
+      <TableView fx:id="table_view" layoutY="67.0" prefHeight="533.0" prefWidth="1200.0" style="-fx-background-color: ;">
+        <columns>
+          <TableColumn fx:id="col_date" prefWidth="117.0" text="Date" />
+          <TableColumn fx:id="col_temperature" prefWidth="221.0" text="Temperature" />
+            <TableColumn fx:id="col_attendance" prefWidth="248.0" text="Attendance Code" />
+            <TableColumn fx:id="col_photo" prefWidth="613.0" text="Seating Photo File" />
+        </columns>
+      </TableView>
+      <Button fx:id="search" layoutX="23.0" layoutY="14.0" mnemonicParsing="false" onAction="#onSearchClicked" text="Search" />
+      <Button fx:id="view" layoutX="1099.0" layoutY="14.0" mnemonicParsing="false" onAction="#onViewClicked" text="View All" />
+   </children>
+</AnchorPane>

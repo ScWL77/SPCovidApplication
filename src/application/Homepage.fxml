@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1200.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomepageController">
+   <children>
+      <Label layoutX="181.0" layoutY="156.0" text="Welcome to SP Covid Application Homepage!" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBack" layoutX="1072.0" layoutY="539.0" mnemonicParsing="false" onAction="#onBackClicked" style="-fx-background-color: f05658;" text="Sign Out" textFill="WHITE" />
+      <AnchorPane prefHeight="300.0" prefWidth="1200.0" style="-fx-background-color: f05658;">
+         <children>
+            <Label alignment="CENTER" layoutX="330.0" layoutY="63.0" prefHeight="35.0" prefWidth="540.0" text="Welcome to SP Covid Application Homepage" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="250.0" layoutY="174.0" prefHeight="300.0" prefWidth="250.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Button fx:id="upload" layoutX="60.0" layoutY="242.0" mnemonicParsing="false" onAction="#onUploadClicked" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: f05658;" text="Upload" textFill="WHITE" AnchorPane.topAnchor="242.0" />
+            <ImageView fitHeight="191.0" fitWidth="200.0" layoutX="30.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="25.0">
+               <image>
+                  <Image url="@images/1st_icon.jpg" />
+               </image></ImageView>
+         </children>
+         <effect>
+            <DropShadow color="#00000088" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="667.0" layoutY="174.0" prefHeight="300.0" prefWidth="250.0" style="-fx-background-color: #ffffff;">
+         <effect>
+            <DropShadow color="#00000087" />
+         </effect>
+         <children>
+            <Button fx:id="SearchandView" layoutX="60.0" layoutY="208.0" mnemonicParsing="false" onAction="#onSearchandViewClicked" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: f05658;" text="Search and View" textFill="WHITE" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="242.0" />
+            <ImageView fitHeight="179.0" fitWidth="168.0" layoutX="46.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: #f05658;" AnchorPane.leftAnchor="46.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="39.0">
+               <image>
+                  <Image url="@images/2nd_icon.png" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
