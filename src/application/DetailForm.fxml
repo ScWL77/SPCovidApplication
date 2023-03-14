@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1200.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DetailFormController">
+   <children>
+      <Label layoutX="600.0" layoutY="104.0" text="Temperature" />
+      <Label layoutX="600.0" layoutY="176.0" text="Attendance Code" />
+      <Label layoutX="600.0" layoutY="253.0" text="Seating Photo" />
+      <TextField fx:id="temperature" layoutX="782.0" layoutY="99.0" />
+      <TextField fx:id="code" layoutX="782.0" layoutY="171.0" />
+      <Button fx:id="Upload" layoutX="1036.0" layoutY="522.0" mnemonicParsing="false" onAction="#onuploadClicked" style="-fx-background-color: f05658;" text="Upload" textFill="WHITE" />
+      <ImageView fx:id="img_view" fitHeight="197.0" fitWidth="254.0" layoutX="782.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="Choose" layoutX="600.0" layoutY="285.0" mnemonicParsing="false" onAction="#onChooseClicked" style="-fx-background-color: f05658;" text="Choose" textFill="WHITE" />
+      <ImageView fx:id="img_view" fitHeight="203.0" fitWidth="254.0" layoutX="782.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="text_path" layoutX="782.0" layoutY="456.0" prefHeight="31.0" prefWidth="254.0" />
+      <AnchorPane prefHeight="600.0" prefWidth="450.0" style="-fx-background-color: f05658;">
+         <children>
+            <Label alignment="CENTER" layoutX="98.0" layoutY="110.0" text="DETAIL FORM" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="342.0" fitWidth="286.0" layoutX="73.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/detail_form.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
